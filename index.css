@@ -1,0 +1,161 @@
+body{
+    /* background: url("./wireframe.jpg") no-repeat; */
+    background-size: 100%;
+    width:100vw;
+    height:500vh;
+}
+
+
+main{
+    max-width: 1420px;
+}
+
+section{
+    padding: 2rem;
+    border: 1px solid black;
+    display: flex;
+    justify-content:space-between;
+}
+
+section:nth-child(odd){
+    background: #eee;
+}
+
+section div{
+    border: 1px solid pink;
+    padding: 1rem;
+    flex:1;
+}
+
+section:nth-child(3) div:nth-child(1){
+    border: 1px solid red;
+    flex: 2;
+}
+
+
+section:nth-child(4) div  {
+    border: 1px solid blue;
+    display:flex;
+    flex-direction: row;
+}
+
+section:nth-child(4) {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+section:nth-child(4) div span{
+    font-size: 4rem;
+    position: relative;
+
+}
+section:nth-child(4) div span::after{
+    content:'';
+    background:blue;
+    z-index: -1;
+    width: 7rem;
+    height: 7rem;
+    position:absolute;
+    top: -.3rem;
+    display: flex;
+    margin: auto;
+    right: 0;
+    left: 0;
+    border-radius: 100%;
+}
+
+.circle {
+    content:'';
+    background:blue;
+    z-index: -1;
+    width: 7rem;
+    height: 7rem;
+    position:absolute;
+    top: -.3rem;
+    display: flex;
+    margin: auto;
+    right: 0;
+    left: 0;
+    border-radius: 100%;
+}
+
+section:nth-child(4) div div{
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+section:nth-child(5){
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+section:nth-child(5) > h3, section:nth-child(5) > p{
+    align-items: center;
+    border: 1px solid teal;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+section:nth-child(5) div{
+    display: flex;
+    flex-direction: row;
+}
+
+section:nth-child(5) div:nth-child(even){
+    text-align: right;
+}
+
+section:nth-child(5) div:nth-child(odd){
+    text-align: left;
+}
+
+
+section:nth-child(5) div div{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+section:nth-child(6) {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+section:nth-child(6) div {
+    display:flex;
+}
+
+section:nth-child(6) div div {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+section:nth-child(7) {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section:nth-child(8){
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+
+.col-lg-4, .col-md-2 .col-md-4, .col-md-6, col-md-3{
+    max-width:unset;
+}
